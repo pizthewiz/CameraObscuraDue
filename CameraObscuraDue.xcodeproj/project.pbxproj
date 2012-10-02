@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8AA23AA1617F3E200D1A782 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA23A91617F3E200D1A782 /* Cocoa.framework */; };
+		D8AA23AC1617F3E200D1A782 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA23AB1617F3E200D1A782 /* Quartz.framework */; };
+		D8AA23B81617F3E200D1A782 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8AA23B61617F3E200D1A782 /* InfoPlist.strings */; };
+		D8AA23BB1617F3E200D1A782 /* CameraObscuraDuePlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA23BA1617F3E200D1A782 /* CameraObscuraDuePlugIn.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8AA23A61617F3E200D1A782 /* CameraObscuraDue.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraObscuraDue.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8AA23A91617F3E200D1A782 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D8AA23AB1617F3E200D1A782 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		D8AA23AE1617F3E200D1A782 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D8AA23B01617F3E200D1A782 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8AA23B51617F3E200D1A782 /* CameraObscuraDue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraObscuraDue-Info.plist"; sourceTree = "<group>"; };
+		D8AA23B71617F3E200D1A782 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8AA23B91617F3E200D1A782 /* CameraObscuraDuePlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraObscuraDuePlugIn.h; sourceTree = "<group>"; };
+		D8AA23BA1617F3E200D1A782 /* CameraObscuraDuePlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraObscuraDuePlugIn.m; sourceTree = "<group>"; };
+		D8AA23BC1617F3E200D1A782 /* CameraObscuraDue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraObscuraDue-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8AA23A21617F3E200D1A782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8AA23AA1617F3E200D1A782 /* Cocoa.framework in Frameworks */,
+				D8AA23AC1617F3E200D1A782 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8AA239A1617F3E200D1A782 = {
+			isa = PBXGroup;
+			children = (
+				D8AA23B31617F3E200D1A782 /* CameraObscuraDue */,
+				D8AA23A81617F3E200D1A782 /* Frameworks */,
+				D8AA23A71617F3E200D1A782 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8AA23A71617F3E200D1A782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8AA23A61617F3E200D1A782 /* CameraObscuraDue.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8AA23A81617F3E200D1A782 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8AA23A91617F3E200D1A782 /* Cocoa.framework */,
+				D8AA23AB1617F3E200D1A782 /* Quartz.framework */,
+				D8AA23AD1617F3E200D1A782 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8AA23AD1617F3E200D1A782 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8AA23AE1617F3E200D1A782 /* AppKit.framework */,
+				D8AA23B01617F3E200D1A782 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D8AA23B31617F3E200D1A782 /* CameraObscuraDue */ = {
+			isa = PBXGroup;
+			children = (
+				D8AA23B91617F3E200D1A782 /* CameraObscuraDuePlugIn.h */,
+				D8AA23BA1617F3E200D1A782 /* CameraObscuraDuePlugIn.m */,
+				D8AA23B41617F3E200D1A782 /* Supporting Files */,
+			);
+			path = CameraObscuraDue;
+			sourceTree = "<group>";
+		};
+		D8AA23B41617F3E200D1A782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8AA23B51617F3E200D1A782 /* CameraObscuraDue-Info.plist */,
+				D8AA23B61617F3E200D1A782 /* InfoPlist.strings */,
+				D8AA23BC1617F3E200D1A782 /* CameraObscuraDue-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8AA23A51617F3E200D1A782 /* CameraObscuraDue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8AA23BF1617F3E200D1A782 /* Build configuration list for PBXNativeTarget "CameraObscuraDue" */;
+			buildPhases = (
+				D8AA23A11617F3E200D1A782 /* Sources */,
+				D8AA23A21617F3E200D1A782 /* Frameworks */,
+				D8AA23A31617F3E200D1A782 /* Resources */,
+				D8AA23A41617F3E200D1A782 /* Copy Plug-In Into Place */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraObscuraDue;
+			productName = CameraObscuraDue;
+			productReference = D8AA23A61617F3E200D1A782 /* CameraObscuraDue.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8AA239C1617F3E200D1A782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Chorded Constructions";
+			};
+			buildConfigurationList = D8AA239F1617F3E200D1A782 /* Build configuration list for PBXProject "CameraObscuraDue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8AA239A1617F3E200D1A782;
+			productRefGroup = D8AA23A71617F3E200D1A782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8AA23A51617F3E200D1A782 /* CameraObscuraDue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8AA23A31617F3E200D1A782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8AA23B81617F3E200D1A782 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8AA23A41617F3E200D1A782 /* Copy Plug-In Into Place */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Plug-In Into Place";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies the built plug-in to \"~/Library/Graphics/Quartz Composer Plug-Ins\" and overrides any previous version at that location\n\nmkdir -p \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins\"\nrm -rf \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/CameraObscuraDue.plugin\"\nditto \"$BUILT_PRODUCTS_DIR/CameraObscuraDue.plugin\" \"$USER_LIBRARY_DIR/Graphics/Quartz Composer Plug-Ins/CameraObscuraDue.plugin\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8AA23A11617F3E200D1A782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8AA23BB1617F3E200D1A782 /* CameraObscuraDuePlugIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8AA23B61617F3E200D1A782 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8AA23B71617F3E200D1A782 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8AA23BD1617F3E200D1A782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D8AA23BE1617F3E200D1A782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D8AA23C01617F3E200D1A782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CameraObscuraDue/CameraObscuraDue-Prefix.pch";
+				INFOPLIST_FILE = "CameraObscuraDue/CameraObscuraDue-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		D8AA23C11617F3E200D1A782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CameraObscuraDue/CameraObscuraDue-Prefix.pch";
+				INFOPLIST_FILE = "CameraObscuraDue/CameraObscuraDue-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wall";
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8AA239F1617F3E200D1A782 /* Build configuration list for PBXProject "CameraObscuraDue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8AA23BD1617F3E200D1A782 /* Debug */,
+				D8AA23BE1617F3E200D1A782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8AA23BF1617F3E200D1A782 /* Build configuration list for PBXNativeTarget "CameraObscuraDue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8AA23C01617F3E200D1A782 /* Debug */,
+				D8AA23C11617F3E200D1A782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8AA239C1617F3E200D1A782 /* Project object */;
+}
