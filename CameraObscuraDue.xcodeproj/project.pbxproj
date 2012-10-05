@@ -14,6 +14,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D8A64AC8161F52E5000298A0 /* CHANGELOG.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.markdown; sourceTree = SOURCE_ROOT; };
+		D8A64AC9161F52E5000298A0 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = SOURCE_ROOT; };
+		D8A64ACA161F52E5000298A0 /* TODO.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO.markdown; sourceTree = SOURCE_ROOT; };
 		D8AA23A61617F3E200D1A782 /* CameraObscuraDue.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraObscuraDue.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AA23A91617F3E200D1A782 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D8AA23AB1617F3E200D1A782 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
@@ -91,6 +94,9 @@
 				D8AA23B51617F3E200D1A782 /* CameraObscuraDue-Info.plist */,
 				D8AA23B61617F3E200D1A782 /* InfoPlist.strings */,
 				D8AA23BC1617F3E200D1A782 /* CameraObscuraDue-Prefix.pch */,
+				D8A64AC8161F52E5000298A0 /* CHANGELOG.markdown */,
+				D8A64AC9161F52E5000298A0 /* README.markdown */,
+				D8A64ACA161F52E5000298A0 /* TODO.markdown */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 				D8AA23C11617F3E200D1A782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
