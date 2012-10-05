@@ -8,41 +8,40 @@
 
 #import "CameraObscuraDuePlugIn.h"
 
-#define	kQCPlugIn_Name				@"CameraObscuraDue"
-#define	kQCPlugIn_Description		@"CameraObscuraDue description"
+#define	kQCPlugIn_Name				@"Camera"
+#define	kQCPlugIn_Description		@"DESCRIPTION"
 
 @implementation CameraObscuraDuePlugIn
 
-// Here you need to declare the input / output properties as dynamic as Quartz Composer will handle their implementation
-//@dynamic inputFoo, outputBar;
+@dynamic inputSaveFolderLocation, inputCaptureSignal, outputDoneSignal, outputFileLocation;
 
 + (NSDictionary*)attributes {
-	// Return a dictionary of attributes describing the plug-in (QCPlugInAttributeNameKey, QCPlugInAttributeDescriptionKey...).
-    return @{QCPlugInAttributeNameKey:kQCPlugIn_Name, QCPlugInAttributeDescriptionKey:kQCPlugIn_Description};
+    return @{
+        QCPlugInAttributeNameKey:kQCPlugIn_Name,
+        QCPlugInAttributeDescriptionKey:kQCPlugIn_Description,
+        QCPlugInAttributeCategoriesKey: @[@"Source"]
+    };
 }
 
 + (NSDictionary*)attributesForPropertyPortWithKey:(NSString*)key {
-	// Specify the optional attributes for property based ports (QCPortAttributeNameKey, QCPortAttributeDefaultValueKey...).
+    if ([key isEqualToString:@"inputSaveFolderLocation"]) {
+        return @{QCPortAttributeNameKey: @"Save Folder", QCPortAttributeDefaultValueKey: @"SOMEWHERE"};
+    } else if ([key isEqualToString:@"inputCaptureSignal"]) {
+        return @{QCPortAttributeNameKey: @"Capture Signal"};
+    } else if ([key isEqualToString:@"outputDoneSignal"]) {
+        return @{QCPortAttributeNameKey: @"Done Signal"};
+    } else if ([key isEqualToString:@"outputFileLocation"]) {
+        return @{QCPortAttributeNameKey: @"Image Location"};
+    }
 	return nil;
 }
 
 + (QCPlugInExecutionMode)executionMode {
-	// Return the execution mode of the plug-in: kQCPlugInExecutionModeProvider, kQCPlugInExecutionModeProcessor, or kQCPlugInExecutionModeConsumer.
-	return kQCPlugInExecutionModeProcessor;
+	return kQCPlugInExecutionModeProvider;
 }
 
 + (QCPlugInTimeMode)timeMode {
-	// Return the time dependency mode of the plug-in: kQCPlugInTimeModeNone, kQCPlugInTimeModeIdle or kQCPlugInTimeModeTimeBase.
 	return kQCPlugInTimeModeNone;
-}
-
-- (id)init {
-	self = [super init];
-	if (self) {
-		// Allocate any permanent resource required by the plug-in.
-	}
-	
-	return self;
 }
 
 - (BOOL)startExecution:(id <QCPlugInContext>)context {
