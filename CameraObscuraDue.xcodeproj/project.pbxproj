@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8A64ACD161F547F000298A0 /* ImageCaptureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A64ACC161F547F000298A0 /* ImageCaptureCore.framework */; };
 		D8AA23AA1617F3E200D1A782 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA23A91617F3E200D1A782 /* Cocoa.framework */; };
 		D8AA23AC1617F3E200D1A782 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA23AB1617F3E200D1A782 /* Quartz.framework */; };
 		D8AA23B81617F3E200D1A782 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8AA23B61617F3E200D1A782 /* InfoPlist.strings */; };
@@ -14,9 +15,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D8A64AC8161F52E5000298A0 /* CHANGELOG.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.markdown; sourceTree = SOURCE_ROOT; };
-		D8A64AC9161F52E5000298A0 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = SOURCE_ROOT; };
-		D8A64ACA161F52E5000298A0 /* TODO.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO.markdown; sourceTree = SOURCE_ROOT; };
+		D8509D1B1632352F00CF2F14 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = SOURCE_ROOT; };
+		D8509D1C1632352F00CF2F14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		D8509D1D1632352F00CF2F14 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO.md; sourceTree = SOURCE_ROOT; };
+		D8A64ACC161F547F000298A0 /* ImageCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageCaptureCore.framework; path = System/Library/Frameworks/ImageCaptureCore.framework; sourceTree = SDKROOT; };
 		D8AA23A61617F3E200D1A782 /* CameraObscuraDue.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraObscuraDue.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AA23A91617F3E200D1A782 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D8AA23AB1617F3E200D1A782 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
@@ -36,6 +38,7 @@
 			files = (
 				D8AA23AA1617F3E200D1A782 /* Cocoa.framework in Frameworks */,
 				D8AA23AC1617F3E200D1A782 /* Quartz.framework in Frameworks */,
+				D8A64ACD161F547F000298A0 /* ImageCaptureCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,7 @@
 			children = (
 				D8AA23A91617F3E200D1A782 /* Cocoa.framework */,
 				D8AA23AB1617F3E200D1A782 /* Quartz.framework */,
+				D8A64ACC161F547F000298A0 /* ImageCaptureCore.framework */,
 				D8AA23AD1617F3E200D1A782 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -94,9 +98,9 @@
 				D8AA23B51617F3E200D1A782 /* CameraObscuraDue-Info.plist */,
 				D8AA23B61617F3E200D1A782 /* InfoPlist.strings */,
 				D8AA23BC1617F3E200D1A782 /* CameraObscuraDue-Prefix.pch */,
-				D8A64AC8161F52E5000298A0 /* CHANGELOG.markdown */,
-				D8A64AC9161F52E5000298A0 /* README.markdown */,
-				D8A64ACA161F52E5000298A0 /* TODO.markdown */,
+				D8509D1C1632352F00CF2F14 /* README.md */,
+				D8509D1B1632352F00CF2F14 /* CHANGELOG.md */,
+				D8509D1D1632352F00CF2F14 /* TODO.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
