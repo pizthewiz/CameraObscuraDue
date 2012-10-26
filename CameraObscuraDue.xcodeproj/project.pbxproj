@@ -18,6 +18,7 @@
 		D8509D1B1632352F00CF2F14 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = SOURCE_ROOT; };
 		D8509D1C1632352F00CF2F14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		D8509D1D1632352F00CF2F14 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO.md; sourceTree = SOURCE_ROOT; };
+		D877B3E2163A477500F3084F /* Jakefile.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Jakefile.js; sourceTree = SOURCE_ROOT; };
 		D8A64ACC161F547F000298A0 /* ImageCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageCaptureCore.framework; path = System/Library/Frameworks/ImageCaptureCore.framework; sourceTree = SDKROOT; };
 		D8AA23A61617F3E200D1A782 /* CameraObscuraDue.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraObscuraDue.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AA23A91617F3E200D1A782 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -88,6 +89,10 @@
 				D8AA23B91617F3E200D1A782 /* CameraObscuraDuePlugIn.h */,
 				D8AA23BA1617F3E200D1A782 /* CameraObscuraDuePlugIn.m */,
 				D8AA23B41617F3E200D1A782 /* Supporting Files */,
+				D8509D1C1632352F00CF2F14 /* README.md */,
+				D8509D1B1632352F00CF2F14 /* CHANGELOG.md */,
+				D8509D1D1632352F00CF2F14 /* TODO.md */,
+				D877B3E2163A477500F3084F /* Jakefile.js */,
 			);
 			path = CameraObscuraDue;
 			sourceTree = "<group>";
@@ -98,9 +103,6 @@
 				D8AA23B51617F3E200D1A782 /* CameraObscuraDue-Info.plist */,
 				D8AA23B61617F3E200D1A782 /* InfoPlist.strings */,
 				D8AA23BC1617F3E200D1A782 /* CameraObscuraDue-Prefix.pch */,
-				D8509D1C1632352F00CF2F14 /* README.md */,
-				D8509D1B1632352F00CF2F14 /* CHANGELOG.md */,
-				D8509D1D1632352F00CF2F14 /* TODO.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,6 +117,7 @@
 				D8AA23A11617F3E200D1A782 /* Sources */,
 				D8AA23A21617F3E200D1A782 /* Frameworks */,
 				D8AA23A31617F3E200D1A782 /* Resources */,
+				D877B3E4163A478B00F3084F /* Set Bundle Version */,
 				D8AA23A41617F3E200D1A782 /* Copy Plug-In Into Place */,
 			);
 			buildRules = (
@@ -164,6 +167,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D877B3E4163A478B00F3084F /* Set Bundle Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Bundle Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -f /usr/local/bin/jake ]; then\n    PATH=$PATH:/usr/local/bin jake update\nelse\n    echo \"WARNING - could not find jake, bundle versions left unset\"\nfi";
+		};
 		D8AA23A41617F3E200D1A782 /* Copy Plug-In Into Place */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
