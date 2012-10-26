@@ -8,30 +8,25 @@
 
 #import "CameraObscuraDuePlugIn.h"
 
-#define	kQCPlugIn_Name				@"Camera"
-#define	kQCPlugIn_Description		@"DESCRIPTION"
-
 @implementation CameraObscuraDuePlugIn
 
-@dynamic inputSaveFolderLocation, inputCaptureSignal, outputDoneSignal, outputFileLocation;
+@dynamic inputCaptureSignal, inputOperationMode, outputDoneSignal;
 
 + (NSDictionary*)attributes {
     return @{
-        QCPlugInAttributeNameKey:kQCPlugIn_Name,
-        QCPlugInAttributeDescriptionKey:kQCPlugIn_Description,
+        QCPlugInAttributeNameKey: @"Camera",
+        QCPlugInAttributeDescriptionKey: @"…",
         QCPlugInAttributeCategoriesKey: @[@"Source"]
     };
 }
 
 + (NSDictionary*)attributesForPropertyPortWithKey:(NSString*)key {
-    if ([key isEqualToString:@"inputSaveFolderLocation"]) {
-        return @{QCPortAttributeNameKey: @"Save Folder", QCPortAttributeDefaultValueKey: @"SOMEWHERE"};
-    } else if ([key isEqualToString:@"inputCaptureSignal"]) {
+    if ([key isEqualToString:@"inputCaptureSignal"]) {
         return @{QCPortAttributeNameKey: @"Capture Signal"};
+    } else if ([key isEqualToString:@"inputOperationMode"]) {
+        return @{QCPortAttributeNameKey: @"Operation Mode", QCPortAttributeTypeKey: QCPortTypeIndex, QCPortAttributeMenuItemsKey: @[@"Memory", @"Disk"], QCPortAttributeDefaultValueKey: @0, QCPortAttributeMinimumValueKey: @0, QCPortAttributeMaximumValueKey: @1};
     } else if ([key isEqualToString:@"outputDoneSignal"]) {
         return @{QCPortAttributeNameKey: @"Done Signal"};
-    } else if ([key isEqualToString:@"outputFileLocation"]) {
-        return @{QCPortAttributeNameKey: @"Image Location"};
     }
 	return nil;
 }

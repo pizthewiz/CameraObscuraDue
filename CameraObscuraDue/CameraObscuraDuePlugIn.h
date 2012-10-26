@@ -9,8 +9,7 @@
 #import <Quartz/Quartz.h>
 
 @interface CameraObscuraDuePlugIn : QCPlugIn
-@property (nonatomic, weak) NSString* inputSaveFolderLocation;
 @property (nonatomic) BOOL inputCaptureSignal;
+@property (nonatomic) NSUInteger inputOperationMode;
 @property (nonatomic) BOOL outputDoneSignal;
-@property (nonatomic, weak) NSString* outputFileLocation;
 @end
