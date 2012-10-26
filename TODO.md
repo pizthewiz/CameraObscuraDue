@@ -1,9 +1,9 @@
 
 ## NOW
 
-* add shit
+* add proper output port based on operation mode setting value
+* detect and capture from connected camera
 
 ## LATER
 
 * consider creating separate camera and camera control patches
-* add operation mode for image or image location as output
